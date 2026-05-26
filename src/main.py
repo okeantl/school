@@ -11,7 +11,9 @@ def main():
     Vase.run(my_corridor)
     Vase.vxod(my_vxod)
     Vase.wardrobe(my_wardrobe)
-    Vase.sportzal(my_sportzal)
+    Vase.sportzal(my_wardrobe, my_sportzal)
+    Vase.undress(my_wardrobe)
+    Vase.changed_clothes(my_wardrobe, my_sportzal)
     
 if __name__ == "__main__":
     main()
