@@ -16,5 +16,7 @@ class Wardrobe(LoggableMixin):
         self.log_info()
         
 
-        
+class SportZal(LoggableMixin):
+    def __init__(self):
+        self.log_info()      
 
