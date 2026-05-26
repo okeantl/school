@@ -17,5 +17,11 @@ class Students:
     def wardrobe(self, wardrobe: 'Wardrobe'):
         print(f"В {wardrobe.log_info()}, зашел ученик, {self.name}")
         
-    def sportzal(self, sportzal: 'SportZal'):
-        print(f"Ученик пошел в {sportzal.log_info()}, на физру")
+    def sportzal(self, wardrobe: 'Wardrobe', sportzal: 'SportZal'):
+        print(f"{self.name} пошел в {wardrobe.log_info()}, переодеваться в {sportzal.log_info()}")
+        
+    def undress(self, wardrobe: 'Wardrobe'):
+        print(f"{self.name} разделся, чтобы пойти на урок, когда зашел в {wardrobe.log_info()}")
+        
+    def changed_clothes(self, wardrobe: 'Wardrobe', sportzal: 'SportZal'):
+        print(f"{self.name} зашел в {wardrobe.log_info()} переодеться, чтобы пойти в {sportzal.log_info()}")
