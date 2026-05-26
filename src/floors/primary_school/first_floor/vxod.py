@@ -1,10 +1,9 @@
 from src.mixins.mixin import LoggableMixin
 
 
-class Corridor(LoggableMixin):
+class Vxod(LoggableMixin):
     def __init__(self):
         self.log_info()
         
-
+    
         
-
