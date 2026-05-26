@@ -1,8 +1,7 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.floors.primary_school.first_floor.corridor import Corridor
-    from src.floors.primary_school.first_floor.vxod import Vxod
+    from src.floors.primary_school.first_floor.first_floor import Corridor, Vxod, Wardrobe
         
 class Students:
     def __init__(self, name: str):
@@ -15,3 +14,5 @@ class Students:
     def vxod(self, vxod: 'Vxod'):
         print(f"В школу через главный {vxod.log_info()}, зашел ученик, {self.name}")
         
+    def wardrobe(self, wardrobe: 'Wardrobe'):
+        print(f"В {wardrobe.log_info()}, зашел ученик, {self.name}")
