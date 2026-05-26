@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.floors.primary_school.first_floor.first_floor import Corridor, Vxod, Wardrobe
+    from src.floors.primary_school.first_floor.first_floor import Corridor, Vxod, Wardrobe, SportZal
         
 class Students:
     def __init__(self, name: str):
@@ -16,3 +16,6 @@ class Students:
         
     def wardrobe(self, wardrobe: 'Wardrobe'):
         print(f"В {wardrobe.log_info()}, зашел ученик, {self.name}")
+        
+    def sportzal(self, sportzal: 'SportZal'):
+        print(f"Ученик пошел в {sportzal.log_info()}, на физру")
